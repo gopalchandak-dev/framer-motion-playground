@@ -1,5 +1,12 @@
+import React from "react";
+import DraggableBox from "./component/DraggableBox";
+
 const App = () => {
-	return <div>{/* Use components with different animations here */}</div>;
+	return (
+		<div>
+			<DraggableBox />
+		</div>
+	);
 };
 
 export default App;

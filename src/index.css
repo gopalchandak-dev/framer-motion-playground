@@ -1,0 +1,72 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background-color: #0d1017;
+	color: #fff;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+}
+
+.box {
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	background: rgba(255, 255, 255, 0.2);
+	backdrop-filter: blur(10px);
+	background-color: yellow;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: #fff;
+	font-size: 24px;
+	text-align: center;
+}
+.perspective-1000 {
+	perspective: 1000px;
+}
+
+.transform-style-preserve-3d {
+	transform-style: preserve-3d;
+}
+
+.card {
+	width: 16rem; /* Adjust the size as needed */
+	height: 10rem; /* Adjust the size as needed */
+	position: relative;
+	transform-style: preserve-3d;
+}
+
+.card-face {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 1.5rem;
+	font-weight: bold;
+	backface-visibility: hidden;
+	border-radius: 0.5rem; /* Adjust as needed */
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.card-front {
+	background-color: #ffffff; /* Front side background color */
+	color: #000000; /* Front side text color */
+}
+
+.card-back {
+	background-color: #1e90ff; /* Back side background color */
+	color: #ffffff; /* Back side text color */
+	transform: rotateY(180deg); /* Rotate back side 180 degrees */
+}
